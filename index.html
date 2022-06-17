@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carousel</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <ul>
+    <li><a href="#home">Vojak z povolani</a></li>
+    <li><a href="#news">Vojak v zaloze</a></li>
+    <li><a href="#contact">Student vojenske skoly</a></li>
+    <li style="float:right"><a class="active" href="#about">Pripoj se k nam!</a></li>
+  </ul>
+    
+   <div class="carousel" data-carousel>
+      <div class="carousel-buttons">
+       <button class="carousel-button carousel-button_previous" data-carousel-button-previous>
+         <span class="fas fa-chevron-circle-left"></span>
+        </button>
+        <button class="carousel-button carousel-button_next" data-carousel-button-next>
+         <span class="fas fa-chevron-circle-right"></span>
+        </button>
+     <div class="slides" data-carousel-slides-container>
+      <div class="slide">
+        <img src="1.jpg" alt="1">
+      </div>
+      <div class="slide">
+        <img src="2.jpg" alt="2">
+      </div>
+      <div class="slide">
+        <img src="3.jpg" alt="3">
+      </div>
+      <div  class="slide">
+        <img src="4.jpg" alt="4">
+      </div>
+      <div class="slide">
+        <img src="5.jpg" alt="5">
+      </div>
+      <div class="slide">
+        <img src="6.jpg" alt="6">
+      </div>
+      <div class="slide">
+        <img src="7.jpg" alt="7">
+      </div>
+    </div>
+    <div class="Ukrajinamodra">
+      Slava Ukrajině!
+      <div class="Stred" id="app">
+        <button @click="MrtvejRus++">
+         Zabij Rusaka: {{ MrtvejRus }}
+        </button>
+      </div>
+    </div>
+    <div class="Ukrajinazluta">
+      Слава України!
+    </div>
+  <script src="https://unpkg.com/vue@latest"></script>
+  <script src="main.js"></script>
+  <script src="idek.js"></script>
+</body>
+</html>
